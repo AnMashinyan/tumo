@@ -66,7 +66,7 @@ class User
         return (object)['message' => 'Logout ok', 'result' => true];
     }
 
-    public static function register(string $mail, string $password, string $firstName, string $lastName, int $age, int $country_id, int $city_id)
+    public static function register(string $mail, string $password, string $firstName, string $lastName, int $age,  $country_id,  $city_id)
     {
         $db = Mysql::connection();
         $unique_mail = (int)$db->getItem("SELECT COUNT(*) FROM users WHERE mail = :mail", ['mail' => $mail]);

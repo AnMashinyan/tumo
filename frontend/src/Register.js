@@ -79,7 +79,7 @@ function Register() {
                 <input type="text" placeholder="Last Name *" value={lastName} onChange={(e) => setLastName(e.target.value)} required />
                 <input type="number" placeholder="Age *" value={age} onChange={(e) => setAge(e.target.value)} required />
 
-                <select value={selectedCountry} onChange={handleCountryChange} required>
+                <select value={selectedCountry} onChange={handleCountryChange} >
                     <option value="">Select Country *</option>
                     {Array.isArray(countries) && countries.length > 0 ? (
                         countries.map(country => (
@@ -92,7 +92,7 @@ function Register() {
                     )}
                 </select>
 
-                <select value={selectedCity} onChange={(e) => setSelectedCity(e.target.value)} required>
+                <select value={selectedCity} onChange={(e) => setSelectedCity(e.target.value)} >
                     <option value="">Select City *</option>
                     {Array.isArray(cities) && cities.length > 0 ? (
                         cities.map(city => (
