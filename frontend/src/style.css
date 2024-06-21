@@ -1,0 +1,417 @@
+/* Reset some default styles for better cross-browser consistency */
+body, h2, form, input, button, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Center the login container on the page */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+/* Style the login form */
+.login-form {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+/* Style the form heading */
+.login-form h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* Style the error message */
+.error-message {
+    color: red;
+    margin-bottom: 1rem;
+}
+
+/* Style the form groups (label and input together) */
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+/* Style the labels */
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #666;
+}
+
+/* Style the input fields */
+.form-input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style the login button */
+.login-button {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #28a745;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 1rem;
+}
+
+.login-button:hover {
+    background-color: #218838;
+}
+
+/* Style the register text */
+.register-text {
+    color: #666;
+    margin-top: 1rem;
+}
+
+/* Style the register link */
+.register-link {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.register-link:hover {
+    color: #0056b3;
+}
+
+/* Reset some default styles for better cross-browser consistency */
+body, h2, form, input, button, p, select, option {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Center the register form on the page */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+/* Style the register form */
+.register-form {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+/* Style the form heading */
+.register-form h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* Style the input fields */
+.register-form input,
+.register-form select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+/* Style the register button */
+.register-form button {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+.register-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Style the register text */
+.register-text {
+    color: #666;
+    margin-top: 1rem;
+}
+
+/* Style the login link */
+.register-form .login-link {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.register-form .login-link:hover {
+    color: #0056b3;
+}
+/* Header.css */
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.student-info {
+    display: flex;
+    align-items: center;
+}
+
+.student-info span {
+    margin-right: 10px;
+}
+
+.student-info button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #555;
+    color: #fff;
+    cursor: pointer;
+}
+
+.student-info button:hover {
+    background-color: #777;
+}
+
+/* ProfileModal.css */
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 400px;
+    width: 100%;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #555;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-content form label {
+    margin-bottom: 10px;
+}
+/* ProfileModal.css */
+
+/* Styles for country select */
+.modal-content form label select[name="country_id"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+    width: calc(100% - 16px);
+}
+
+/* Styles for city select */
+.modal-content form label select[name="city_id"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+    width: calc(100% - 16px);
+}
+
+.modal-content form input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+    width: calc(100% - 16px);
+}
+
+.modal-content form button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #555;
+    color: #fff;
+    cursor: pointer;
+}
+
+.modal-content form button:hover {
+    background-color: #777;
+}
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.student-info {
+    display: flex;
+    align-items: center;
+    margin-left: 0px;
+}
+
+.student-info .user-name {
+    margin-right: 10px;
+}
+
+.student-info .buttons-container {
+    display: flex;
+    align-items: center;
+}
+
+.student-info button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #555;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.student-info button:hover {
+    background-color: #777;
+}
+
+
+.student-list {
+    margin: 20px;
+}
+
+.student-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.student-table th,
+.student-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.student-table th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+.student-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.student-table tr:hover {
+    background-color: #ddd;
+}
+.search-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.student-list {
+    margin: 20px;
+}
+
+.student-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.student-table th,
+.student-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.student-table th {
+    background-color: #f2f2f2;
+}
+
+.student-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.student-table tbody tr:hover {
+    background-color: #ddd;
+}
+
